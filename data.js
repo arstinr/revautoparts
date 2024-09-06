@@ -1,8 +1,8 @@
 const listings = [
     {
-        title: "Front Brake Pad Set",
-        description: "High-performance brake pads compatible with Toyota Camry (2015-2019).",
-        price: 75.00
+        title: "Cookies",
+        description: "Very Yummy",
+        price: 250.00
     },
     {
         title: "Oil Filter",

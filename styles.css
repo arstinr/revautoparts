@@ -35,8 +35,12 @@ main {
 
 .search-filter {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     margin-bottom: 2rem;
+}
+
+.filter-container {
+    margin-left: 1rem;
 }
 
 .search-container, .filter-container {
@@ -57,7 +61,7 @@ input[type="text"] {
 }
 
 .search-container::before {
-    content: "⌕";
+    /*content: "⌕"; REPLACE with search icon*/
     position: absolute;
     left: 0.75rem;
     top: 50%;

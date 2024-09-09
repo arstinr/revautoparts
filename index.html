@@ -11,24 +11,29 @@
         <h1>Rev AutoParts</h1>
     </header>
     <main>
+
         <section class="search-filter">
             <div class="search-container">
-                <input type="text" id="search" placeholder="Search for auto parts">
+                <label for="search">Search for Auto Part</label>
+                <input type="text" id="search" placeholder="Search">
             </div>
             <div class="filter-container">
-                <label for="filter">Status</label>
+                <label for="filter">Filter</label>
                 <select id="filter">
                     <option value="">View all</option>
                 </select>
             </div>
         </section>
+
         <section id="listings-container">
             <!-- Listings will be dynamically inserted here -->
         </section>
     </main>
+
     <footer>
         <p>Found a part you need? Contact us at: <a href="tel:+1234567890">0917-123-4567</a></p>
     </footer>
+
     <script src="data.js"></script>
     <script src="script.js"></script>
 </body>

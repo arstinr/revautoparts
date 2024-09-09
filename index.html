@@ -10,17 +10,35 @@
     <header>
         <h1>Rev AutoParts</h1>
     </header>
-    
     <main>
-        <div id="listings-container">
+        <section class="how-it-works">
+            <div class="how-it-works-item">
+                <h3>1</h3>
+                <p>Step 1 description</p>
+            </div>
+            <div class="how-it-works-item">
+                <h3>2</h3>
+                <p>Step 2 description</p>
+            </div>
+            <div class="how-it-works-item">
+                <h3>3</h3>
+                <p>Step 3 description</p>
+            </div>
+        </section>
+        <section class="search-filter">
+            <input type="text" id="search" placeholder="Search for parts">
+            <select id="filter">
+                <option value="">Filter</option>
+                <!-- Add filter options here -->
+            </select>
+        </section>
+        <section id="listings-container">
             <!-- Listings will be dynamically inserted here -->
-        </div>
+        </section>
     </main>
-
     <footer>
-        <p>Contact us: <a href="tel:+1234567890">0917-123-4567</a></p>
+        <p>Found a part you need? Contact us at: <a href="tel:+1234567890">0917-123-4567</a></p>
     </footer>
-
     <script src="data.js"></script>
     <script src="script.js"></script>
 </body>

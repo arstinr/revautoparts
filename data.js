@@ -6,9 +6,9 @@ const listings = [
         category: "Filters"
     },
     {
-        title: "Brake Pads",
+        title: "Brakers",
         description: "High-performance brake pads for Toyota Camry (2015-2020)",
-        price: 45.00,
+        price: 50.00,
         category: "Brakes"
     },
     {

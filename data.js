@@ -242,7 +242,7 @@ const listings = [
         category: "Seat Covers and Interior"
     },
     {
-        title: "SEAT,COVER LEATHER GRA",
+        title: "SEAT,COVER LEATHER GRAY",
         description: "Compatible with INNOVA 2012 E & J, Subcategory: Seat Cover",
         price: 7075,
         category: "Seat Covers and Interior"

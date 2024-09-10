@@ -144,3 +144,153 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+.how-it-works {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.how-it-works h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.step {
+    flex: 1;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.step:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.step-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.step-number {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.step-header p {
+    font-weight: 600;
+    margin: 0;
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--background-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.icon i {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+.icon-text {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-color);
+}
+
+.step:hover .icon {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.step:hover .icon i {
+    color: white;
+}
+
+.contact-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.contact-float:hover {
+    background-color: var(--hover-color);
+}
+
+.contact-float i {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+.contact-float span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .contact-float span {
+        display: none;
+    }
+
+    .contact-float {
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .contact-float i {
+        margin-right: 0;
+    }
+}
+
+/* Remove any remaining positioning styles if present */

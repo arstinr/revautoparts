@@ -141,6 +141,12 @@ label {
     margin-top: 0.5rem;
 }
 
+a.contact-float {
+    text-decoration: none; /* Removes underline */
+    display: block; /* Ensures the entire div is clickable */
+}
+
+
 footer {
     text-align: center;
     padding: 2rem;

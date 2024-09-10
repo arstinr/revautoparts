@@ -359,6 +359,7 @@ a.how-it-works-link:hover {
 @media (max-width: 576px) {
     body {
         min-height: -webkit-fill-available;
+        min-width: -webkit-fill-available;
     }
 
     main {
@@ -368,6 +369,13 @@ a.how-it-works-link:hover {
 
     .search-filter {
         flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #search, #filter {
+        width: 100%; /* Set to full width */
+        box-sizing: border-box; /* Include padding in width */
     }
 
     .filter-container {
@@ -488,6 +496,86 @@ a.how-it-works-link:hover {
     .how-it-works.overlap {
         width: 95%;
         margin-bottom: -3rem;
+    }
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 768px) {
+    body, main {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .hero.full-width {
+        padding: 3rem 1rem;
+    }
+
+    .hero h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .how-it-works.overlap {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        box-shadow: none;
+        border: none;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        margin-bottom: 1.5rem;
+    }
+
+    .search-filter {
+        padding: 0 1rem;
+    }
+
+    #listings-container {
+        padding: 0 1rem;
+    }
+
+    .listing {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
+
+/* Additional mobile adjustments */
+@media (max-width: 576px) {
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .how-it-works h2 {
+        font-size: 1.25rem;
+    }
+
+    .step-header p {
+        font-size: 1rem;
+    }
+
+    .icon-text {
+        font-size: 0.8rem;
+    }
+
+    .how-it-works-note {
+        font-size: 1rem;
     }
 }
 

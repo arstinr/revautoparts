@@ -436,13 +436,13 @@ footer a:hover {
     padding: 0 2rem;
 }
 
-/* How It Works Section Styles */
+/* How It Works Section Styles LOLLLL*/
 .how-it-works.overlap {
     position: relative;
     z-index: 10;
     margin-bottom: 2rem; /* Negative margin to create overlap */
     margin-top: -6rem; /* Add some space from the top */
-    width: 70%;
+    width: 62%;
     max-width: 1200px;
 }
 

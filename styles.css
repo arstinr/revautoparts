@@ -363,7 +363,7 @@ a.how-it-works-link:hover {
     }
 
     main {
-        padding: 0 1rem;
+        padding: 0 0rem;
         min-height: calc(100vh - 4rem); /* Adjust for mobile */
     }
 

@@ -6,7 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         
         const searchFilterRect = searchFilter.getBoundingClientRect();
-        const targetScrollPosition = window.pageYOffset + searchFilterRect.top - (window.innerHeight / 2) + (searchFilterRect.height / 2);
+        const stopScrollDistance = 20; // Distance from top to stop scrolling (in pixels)
+        
+        const targetScrollPosition = Math.min(
+            window.pageYOffset + searchFilterRect.top - stopScrollDistance,
+            document.documentElement.scrollHeight - window.innerHeight
+        );
 
         window.scrollTo({
             top: targetScrollPosition,

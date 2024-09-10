@@ -1,9 +1,17 @@
-:root {
+/* :root {
     --background-color: #f9fafb;
     --text-color: #111827;
     --border-color: #e5e7eb;
     --primary-color: #3b82f6;
     --hover-color: #2563eb;
+} */
+
+:root {
+    --background-color: #FFFFFF; /* White for elements, text, and background */
+    --text-color: #000000; /* Black for text and small elements */
+    --border-color: #D1CED5; /* Light gray for big elements, fills, and background color */
+    --primary-color: #C60101; /* Red for text, headings, buttons, and highlight color */
+    --hover-color: #221F20; /* Dark red/black for text, headings, buttons, and highlights */
 }
 
 body {

@@ -152,6 +152,7 @@ label {
 a.contact-float {
     text-decoration: none; /* Removes underline */
     display: block; /* Ensures the entire div is clickable */
+
 }
 
 
@@ -172,6 +173,14 @@ footer a:hover {
     text-decoration: underline;
 }
 
+a.how-it-works-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a.how-it-works-link:hover {
+    text-decoration: underline;
+}
 
 .how-it-works {
     background-color: white;

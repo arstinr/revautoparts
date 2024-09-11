@@ -51,8 +51,8 @@ main {
     width: 200px;
     height: 200px;
     /* border: 1px solid black; */
-    margin-top: -50px;
-    margin-bottom: -70px;
+    margin-top: -80px;
+    margin-bottom: -60px;
     object-fit: cover; /* Ensures the image covers the area */
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 80%);
 }

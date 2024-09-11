@@ -48,11 +48,13 @@ main {
 }
 
 #logo {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     /* border: 1px solid black; */
     margin-top: -50px;
-    margin-bottom: -25px;
+    margin-bottom: -70px;
+    object-fit: cover; /* Ensures the image covers the area */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 80%);
 }
 
 .search-filter {
@@ -377,6 +379,17 @@ a.how-it-works-link:hover {
         padding: 0 0rem;
         min-height: calc(100vh - 4rem); /* Adjust for mobile */
     }
+
+    #logo {
+        width: 150px;
+        height: 150px;
+        /* border: 1px solid black; */
+        margin-top: -30px;
+        margin-bottom: -40px;
+        object-fit: cover; /* Ensures the image covers the area */
+        clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 80%);
+    }
+    
 
     .search-filter {
         flex-direction: column;

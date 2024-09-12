@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const listingsContainer = document.getElementById('listings-container');
     const searchInput = document.getElementById('search');
     const filterSelect = document.getElementById('filter');
+    const viewToggleBtn = document.getElementById('view-toggle');
 
     // Function to shuffle an array (Fisher-Yates algorithm)
     function shuffleArray(array) {
@@ -15,17 +16,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Shuffle the listings and store them
     let shuffledListings = shuffleArray([...listings]);
 
+    let isListView = false;
+
     function renderListings(items) {
         listingsContainer.innerHTML = '';
         items.forEach(item => {
             const listingElement = document.createElement('div');
             listingElement.classList.add('listing');
-            listingElement.innerHTML = `
-                <h3>${item.title}</h3>
-                <p>${item.description}</p>
-                <p class="price">₱${item.price.toLocaleString()}</p>
-                <span class="category">${item.category}</span>
-            `;
+            if (isListView) {
+                listingElement.innerHTML = `
+                    <h3>${item.title}</h3>
+                    <p>${item.description}</p>
+                    <p class="price">₱${item.price.toLocaleString()}</p>
+                    <span class="category">${item.category}</span>
+                `;
+            } else {
+                listingElement.innerHTML = `
+                    <h3>${item.title}</h3>
+                    <p>${item.description}</p>
+                    <p class="price">₱${item.price.toLocaleString()}</p>
+                    <span class="category">${item.category}</span>
+                `;
+            }
             listingsContainer.appendChild(listingElement);
         });
     }
@@ -43,8 +55,16 @@ document.addEventListener('DOMContentLoaded', () => {
         renderListings(filteredListings);
     }
 
+    function toggleView() {
+        isListView = !isListView;
+        listingsContainer.classList.toggle('list-view');
+        viewToggleBtn.innerHTML = isListView ? '<i class="fas fa-list"></i>' : '<i class="fas fa-th-large"></i>';
+        filterListings(); // Re-render listings with the new view
+    }
+
     searchInput.addEventListener('input', filterListings);
     filterSelect.addEventListener('change', filterListings);
+    viewToggleBtn.addEventListener('click', toggleView);
 
     // Populate filter options
     const categories = [...new Set(listings.map(item => item.category))];

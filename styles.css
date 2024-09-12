@@ -61,10 +61,10 @@ main {
     display: flex;
     flex-direction: row;
     margin-bottom: 1rem;
-    
+    align-items: flex-end; /* Align items to the bottom */
 }
 
-.filter-container {
+.filter-container, .view-toggle-container {
     margin-left: 1rem;
 }
 
@@ -650,6 +650,84 @@ a.how-it-works-link:hover {
 
     footer {
         margin-top: 2rem; /* Add top margin to the footer */
+    }
+}
+
+.view-toggle-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-toggle-btn:hover {
+    background-color: var(--border-color);
+}
+
+.view-toggle-btn i {
+    color: var(--text-color);
+}
+
+/* List view styles */
+#listings-container.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#listings-container.list-view .listing {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+#listings-container.list-view .listing h3 {
+    flex: 2;
+    margin: 0;
+}
+
+#listings-container.list-view .listing p {
+    flex: 3;
+    margin: 0 1rem;
+}
+
+#listings-container.list-view .listing .price {
+    flex: 1;
+    text-align: right;
+}
+
+#listings-container.list-view .listing .category {
+    flex: 1;
+    text-align: right;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .search-filter {
+        flex-wrap: wrap;
+    }
+
+    .filter-container, .view-toggle-container {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    #listings-container.list-view .listing {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #listings-container.list-view .listing h3,
+    #listings-container.list-view .listing p,
+    #listings-container.list-view .listing .price,
+    #listings-container.list-view .listing .category {
+        flex: none;
+        width: 100%;
+        text-align: left;
+        margin: 0.25rem 0;
     }
 }
 

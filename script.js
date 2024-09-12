@@ -2,19 +2,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const listingsContainer = document.getElementById('listings-container');
     const searchInput = document.getElementById('search');
     const filterSelect = document.getElementById('filter');
+    const sortSelect = document.getElementById('sort');
 
-    // Function to shuffle an array (Fisher-Yates algorithm)
-    function shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
-        }
-        return array;
+    // Function to sort listings
+    function sortListings(items, order = 'asc') {
+        return items.sort((a, b) => {
+            if (order === 'asc') {
+                return a.title.localeCompare(b.title);
+            } else {
+                return b.title.localeCompare(a.title);
+            }
+        });
     }
 
-    // Shuffle the listings and store them
-    let shuffledListings = shuffleArray([...listings]);
-
+    // Function to render listings
     function renderListings(items) {
         listingsContainer.innerHTML = '';
         items.forEach(item => {
@@ -30,21 +31,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function filterListings() {
+    // Function to filter and sort listings
+    function filterAndSortListings() {
         const searchTerm = searchInput.value.toLowerCase();
-        const filterValue = filterSelect.value.toLowerCase();
+        const filterValue = filterSelect.value;
+        const sortValue = sortSelect.value;
 
-        const filteredListings = shuffledListings.filter(item => {
+        let filteredListings = listings.filter(item => {
             const matchesSearch = item.title.toLowerCase().includes(searchTerm) ||
                                   item.description.toLowerCase().includes(searchTerm);
-            const matchesFilter = filterValue === '' || item.category.toLowerCase() === filterValue;
+            const matchesFilter = filterValue === '' || item.category === filterValue;
             return matchesSearch && matchesFilter;
         });
+
+        filteredListings = sortListings(filteredListings, sortValue);
         renderListings(filteredListings);
     }
-
-    searchInput.addEventListener('input', filterListings);
-    filterSelect.addEventListener('change', filterListings);
 
     // Populate filter options
     const categories = [...new Set(listings.map(item => item.category))];
@@ -55,6 +57,17 @@ document.addEventListener('DOMContentLoaded', () => {
         filterSelect.appendChild(option);
     });
 
-    // Initial render with shuffled listings
-    renderListings(shuffledListings);
+    // Populate sort options
+    sortSelect.innerHTML = `
+        <option value="asc">A to Z</option>
+        <option value="desc">Z to A</option>
+    `;
+
+    // Add event listeners
+    searchInput.addEventListener('input', filterAndSortListings);
+    filterSelect.addEventListener('change', filterAndSortListings);
+    sortSelect.addEventListener('change', filterAndSortListings);
+
+    // Initial render (sorted A to Z by default)
+    renderListings(sortListings(listings));
 });

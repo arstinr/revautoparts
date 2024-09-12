@@ -3,6 +3,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search');
     const filterSelect = document.getElementById('filter');
 
+    // Function to shuffle an array (Fisher-Yates algorithm)
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    // Shuffle the listings and store them
+    let shuffledListings = shuffleArray([...listings]);
+
     function renderListings(items) {
         listingsContainer.innerHTML = '';
         items.forEach(item => {
@@ -21,7 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function filterListings() {
         const searchTerm = searchInput.value.toLowerCase();
         const filterValue = filterSelect.value.toLowerCase();
-        const filteredListings = listings.filter(item => {
+
+        const filteredListings = shuffledListings.filter(item => {
             const matchesSearch = item.title.toLowerCase().includes(searchTerm) ||
                                   item.description.toLowerCase().includes(searchTerm);
             const matchesFilter = filterValue === '' || item.category.toLowerCase() === filterValue;
@@ -42,6 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
         filterSelect.appendChild(option);
     });
 
-    // Initial render
-    renderListings(listings);
+    // Initial render with shuffled listings
+    renderListings(shuffledListings);
 });

@@ -78,7 +78,7 @@ const listings = [
       "category": "Body and Exterior"
     },
     {
-      "title": "Seat cvr cord blk",
+      "title": "Seat Cover cord black",
       "description": "Compatible with ALTIS 2019 G Variant",
       "price": 969.99,
       "category": "Seat Covers and Interior"
@@ -210,7 +210,7 @@ const listings = [
       "category": "Body and Exterior"
     },
     {
-      "title": "Lugg tray (shrt blk)",
+      "title": "Lugg tray (shrt black)",
       "description": "Compatible with AVANZA 2012 ALL VARIANTS",
       "price": 999.99,
       "category": "Miscellaneous Accessories"
@@ -228,13 +228,13 @@ const listings = [
       "category": "Seat Covers and Interior"
     },
     {
-      "title": "Seat cvr,cord beige",
+      "title": "Seat Cover,cord beige",
       "description": "Compatible with AVANZA 2012 G Grade (May 2013)",
       "price": 969.99,
       "category": "Seat Covers and Interior"
     },
     {
-      "title": "Seat cvr, cord black",
+      "title": "Seat Cover, cord black",
       "description": "Compatible with AVANZA 2012 J Grade (May 2013)",
       "price": 869.99,
       "category": "Seat Covers and Interior"
@@ -282,13 +282,13 @@ const listings = [
       "category": "Seat Covers and Interior"
     },
     {
-      "title": "Seat cvr, cord blk",
+      "title": "Seat Cover, cord black",
       "description": "Compatible with AVANZA 2015 J",
       "price": 894.99,
       "category": "Seat Covers and Interior"
     },
     {
-      "title": "Seat cvr, khaki blk",
+      "title": "Seat Cover, khaki black",
       "description": "Compatible with AVANZA 2015 VELOZ, G & E",
       "price": 959.99,
       "category": "Seat Covers and Interior"
@@ -486,19 +486,19 @@ const listings = [
       "category": "Lighting and Electrical"
     },
     {
-      "title": "Seat cvr, khaki blk",
+      "title": "Seat Cover, khaki black",
       "description": "Compatible with COROLLA ALTIS 2014 1.6 E",
       "price": 589.99,
       "category": "Seat Covers and Interior"
     },
     {
-      "title": "Seat cvr, cord gray",
+      "title": "Seat Cover, cord gray",
       "description": "Compatible with COROLLA ALTIS 2014 1.6 E",
       "price": 739.99,
       "category": "Seat Covers and Interior"
     },
     {
-      "title": "Fog lamp chrome cvr",
+      "title": "Fog lamp chrome Cover",
       "description": "Compatible with COROLLA ALTIS 2014 All Variants (except E variant)",
       "price": 939.99,
       "category": "Body and Exterior"
@@ -624,7 +624,7 @@ const listings = [
       "category": "Body and Exterior"
     },
     {
-      "title": "Seat cvr,khaki black",
+      "title": "Seat Cover,khaki black",
       "description": "Compatible with FJ CRUISER 2013",
       "price": 889.99,
       "category": "Seat Covers and Interior"
@@ -738,7 +738,7 @@ const listings = [
       "category": "Seat Covers and Interior"
     },
     {
-      "title": "Headlamp chrome cvr",
+      "title": "Headlamp chrome Cover",
       "description": "Compatible with FORTUNER 2011 ALL VARIANTS",
       "price": 2009.99,
       "category": "Body and Exterior"
@@ -870,7 +870,7 @@ const listings = [
       "category": "Brakes"
     },
     {
-      "title": "Seat cvr,khaki gray",
+      "title": "Seat Cover,khaki gray",
       "description": "Compatible with GL Grandia 2015",
       "price": 1479.99,
       "category": "Seat Covers and Interior"
@@ -972,19 +972,19 @@ const listings = [
       "category": "Engine and Performance"
     },
     {
-      "title": "Seat cvr(gray cord.)",
+      "title": "Seat Cover(gray cord.)",
       "description": "Compatible with HIACE 2015 SG Fabric",
       "price": 1774.99,
       "category": "Seat Covers and Interior"
     },
     {
-      "title": "Seat cvr(gray khaki)",
+      "title": "Seat Cover(gray khaki)",
       "description": "Compatible with HIACE 2015 SG Fabric",
       "price": 1264.99,
       "category": "Seat Covers and Interior"
     },
     {
-      "title": "Seat cvr,cordold",
+      "title": "Seat Cover,cordold",
       "description": "Compatible with HIACE 2017 GL Grandia (except 2014 MC)",
       "price": 1904.99,
       "category": "Seat Covers and Interior"
@@ -1098,7 +1098,7 @@ const listings = [
       "category": "Body and Exterior"
     },
     {
-      "title": "Hd lamp chrome cvr",
+      "title": "Hd lamp chrome Cover",
       "description": "Compatible with HILUX 2015 ALL VARIANTS",
       "price": 2449.99,
       "category": "Body and Exterior"
@@ -1110,13 +1110,13 @@ const listings = [
       "category": "Body and Exterior"
     },
     {
-      "title": "Seat cvr, cord blk",
+      "title": "Seat Cover, cord black",
       "description": "Compatible with HILUX 2015 E",
       "price": 799.99,
       "category": "Seat Covers and Interior"
     },
     {
-      "title": "Fog lamp chrome cvr",
+      "title": "Fog lamp chrome Cover",
       "description": "Compatible with HILUX 2015 G, E Variants",
       "price": 2544.99,
       "category": "Lighting and Electrical"
@@ -1128,7 +1128,7 @@ const listings = [
       "category": "Body and Exterior"
     },
     {
-      "title": "Seat cvr, cord blk",
+      "title": "Seat Cover, cord black",
       "description": "Compatible with HILUX 2020 Conquest 4x4 MT, Conquest 4x2, G",
       "price": 809.99,
       "category": "Seat Covers and Interior"
@@ -1344,7 +1344,7 @@ const listings = [
       "category": "Miscellaneous Accessories"
     },
     {
-      "title": "Spare wheel undr cvr",
+      "title": "Spare wheel undr Cover",
       "description": "Compatible with INNOVA 2012 ALL VARIANTS",
       "price": 3364.99,
       "category": "Tires and Wheels"
@@ -1374,7 +1374,7 @@ const listings = [
       "category": "Tires and Wheels"
     },
     {
-      "title": "Seat cvr,leather blk",
+      "title": "Seat Cover,leather black",
       "description": "Compatible with INNOVA 2012 E & J",
       "price": 7099.99,
       "category": "Seat Covers and Interior"
@@ -1386,13 +1386,13 @@ const listings = [
       "category": "Lighting and Electrical"
     },
     {
-      "title": "Seat cvr khaki,gray",
+      "title": "Seat Cover khaki,gray",
       "description": "Compatible with INNOVA 2012 E & J",
       "price": 749.99,
       "category": "Seat Covers and Interior"
     },
     {
-      "title": "Seat,cvr leather gra",
+      "title": "Seat,Cover leather gra",
       "description": "Compatible with INNOVA 2012 E & J",
       "price": 7074.99,
       "category": "Seat Covers and Interior"
@@ -1410,7 +1410,7 @@ const listings = [
       "category": "Body and Exterior"
     },
     {
-      "title": "Seat cvr,cor beige",
+      "title": "Seat Cover,cor beige",
       "description": "Compatible with INNOVA 2012 G",
       "price": 974.99,
       "category": "Seat Covers and Interior"
@@ -1428,19 +1428,19 @@ const listings = [
       "category": "Miscellaneous Accessories"
     },
     {
-      "title": "Seat cvr cord blk",
+      "title": "Seat Cover cord black",
       "description": "Compatible with INNOVA 2016 J VARIANT",
       "price": 1184.99,
       "category": "Seat Covers and Interior"
     },
     {
-      "title": "Seat cvr cord blk",
+      "title": "Seat Cover cord black",
       "description": "Compatible with INNOVA 2016 V",
       "price": 1139.99,
       "category": "Seat Covers and Interior"
     },
     {
-      "title": "Seat cvr khaki blk",
+      "title": "Seat Cover khaki black",
       "description": "Compatible with INNOVA 2016 V",
       "price": 954.99,
       "category": "Seat Covers and Interior"
@@ -1596,7 +1596,7 @@ const listings = [
       "category": "Brakes"
     },
     {
-      "title": "Seat cvr khaki black",
+      "title": "Seat Cover khaki black",
       "description": "Compatible with RAV4 2013 4X2 ONLY",
       "price": 699.99,
       "category": "Seat Covers and Interior"
@@ -1686,7 +1686,7 @@ const listings = [
       "category": "Miscellaneous Accessories"
     },
     {
-      "title": "Seat cvr cord e",
+      "title": "Seat Cover cord e",
       "description": "Compatible with RUSH E 20172018",
       "price": 1154.99,
       "category": "Seat Covers and Interior"
@@ -1836,13 +1836,13 @@ const listings = [
       "category": "Body and Exterior"
     },
     {
-      "title": "Seat cvr,cord black",
+      "title": "Seat Cover,cord black",
       "description": "Compatible with VIOS 2013 E, J Variants",
       "price": 659.99,
       "category": "Seat Covers and Interior"
     },
     {
-      "title": "Foglamp chrome cvr",
+      "title": "Foglamp chrome Cover",
       "description": "Compatible with VIOS 2013 G, E Variants",
       "price": 1019.99,
       "category": "Body and Exterior"
@@ -2016,13 +2016,13 @@ const listings = [
       "category": "Lighting and Electrical"
     },
     {
-      "title": "Seat cvr,cord black",
+      "title": "Seat Cover,cord black",
       "description": "Compatible with YARIS 2014 ALL VARIANTS",
       "price": 624.99,
       "category": "Seat Covers and Interior"
     },
     {
-      "title": "Seat cvr khaki black",
+      "title": "Seat Cover khaki black",
       "description": "Compatible with YARIS 2014 ALL VARIANTS",
       "price": 544.99,
       "category": "Seat Covers and Interior"
@@ -2154,7 +2154,7 @@ const listings = [
       "category": "Lighting and Electrical"
     },
     {
-      "title": "Seat cvr,cord black",
+      "title": "Seat Cover,cord black",
       "description": "",
       "price": 1159.99,
       "category": "Seat Covers and Interior"

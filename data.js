@@ -2566,17 +2566,5 @@ const listings = [
       "description": "",
       "price": 3439.99,
       "category": "Miscellaneous Accessories"
-    },
-    {
-      "title": "Toyota welcome back gift",
-      "description": "",
-      "price": 5574.99,
-      "category": "Miscellaneous Accessories"
-    },
-    {
-      "title": "Toyota free bactaklenz service (sls)",
-      "description": "",
-      "price": 5574.99,
-      "category": "Miscellaneous Accessories"
     }
   ]

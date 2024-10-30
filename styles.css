@@ -119,10 +119,6 @@ label {
     margin-bottom: 2rem;
 }
 
-.listing-text{
-    
-}
-
 .listing {
     background-color: white;
     border: 1px solid var(--border-color);
@@ -157,7 +153,24 @@ label {
     overflow-wrap: break-word;
     word-break: break-word;
 }
+.listing-image {
+    width: 100%; /* Adjust to fit the card's width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Crop the image to cover the area */
+    border-radius: 8px; /* Optional: Rounded corners */
+    background-color: #f5f5f5; /* Light background for empty space */
+}
 
+/* Style for empty image placeholder */
+.listing-image.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5; /* Same background color as the image */
+    color: #ccc; /* Light gray text or icon color */
+    font-size: 16px;
+    font-style: italic;
+}
 .listing img {
     max-width: 100%;
     height: auto;

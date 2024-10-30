@@ -21,7 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
         items.forEach(item => {
             const listingElement = document.createElement('div');
             listingElement.classList.add('listing');
+            
+            // Create the HTML content with conditional image
+            const imageHtml = item.image ? `<img src="${item.image}" alt="${item.title}" class="listing-image">` : '';
+            
             listingElement.innerHTML = `
+                ${imageHtml}
                 <h3>${item.title}</h3>
                 <p>${item.description}</p>
                 <p class="price">₱${item.price.toLocaleString()}</p>

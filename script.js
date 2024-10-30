@@ -27,10 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
             
             listingElement.innerHTML = `
                 ${imageHtml}
-                <h3>${item.title}</h3>
-                <p>${item.description}</p>
-                <p class="price">₱${item.price.toLocaleString()}</p>
-                <span class="category">${item.category}</span>
+                <div class="listing-text">
+                    <h3>${item.title}</h3>
+                    <p>${item.description}</p>
+                    <p class="price">₱${item.price.toLocaleString()}</p>
+                    <span class="category">${item.category}</span>
+                </div>
             `;
             listingsContainer.appendChild(listingElement);
         });

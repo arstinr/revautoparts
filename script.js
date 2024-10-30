@@ -15,17 +15,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Function to render listings
     function renderListings(items) {
         listingsContainer.innerHTML = '';
         items.forEach(item => {
             const listingElement = document.createElement('div');
             listingElement.classList.add('listing');
+    
+            // Create the image HTML with a conditional class for empty placeholder
+            const imageHtml = item.image
+                ? `<img src="${item.image}" alt="${item.title}" class="listing-image">`
+                : `<div class="listing-image empty">No Image</div>`;
+    
             listingElement.innerHTML = `
-                <h3>${item.title}</h3>
-                <p>${item.description}</p>
-                <p class="price">₱${item.price.toLocaleString()}</p>
-                <span class="category">${item.category}</span>
+                ${imageHtml}
+                <div class="listing-text">
+                    <h3>${item.title}</h3>
+                    <p>${item.description}</p>
+                    <p class="price">₱${item.price.toLocaleString()}</p>
+                    <span class="category">${item.category}</span>
+                </div>
             `;
             listingsContainer.appendChild(listingElement);
         });

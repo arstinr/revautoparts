@@ -1,5 +1,19 @@
 const listings = [
     {
+      "title": "New Parts",
+      "description": "Compatible with 86",
+      "price": 49.99,
+      "category": "Engine and Performance",
+      "image": "images/test1.jpeg"
+    },
+    {
+      "title": "New Parts Coming",
+      "description": "Compatible with 86",
+      "price": 1479.99,
+      "category": "Body and Exterior",
+      "image": "images/test2.jpeg"
+    },
+    {
       "title": "Gasket",
       "description": "Compatible with 86",
       "price": 49.99,

@@ -1,3 +1,5 @@
+const supabase = createClient(CONFIG.SUPABASE_URL, CONFIG.SUPABASE_ANON_KEY);
+
 document.addEventListener('DOMContentLoaded', () => {
     const listingsContainer = document.getElementById('listings-container');
     const searchInput = document.getElementById('search');

@@ -1,3 +1,11 @@
+function closePopup() {
+    document.getElementById('updatePopup').style.display = 'none';
+}
+
+window.onload = function() {
+    document.getElementById('updatePopup').style.display = 'flex';
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const listingsContainer = document.getElementById('listings-container');
     const searchInput = document.getElementById('search');

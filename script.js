@@ -1,7 +1,9 @@
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_KEY;
+// Hardcoded Supabase Configuration
+const SUPABASE_URL = 'https://wxujjqdcbpxrbkgigkxf.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind4dWpqcWRjYnB4cmJrZ2lna3hmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzA5NTgyMzQsImV4cCI6MjA0NjUzNDIzNH0.ikrFupGy3rWzJt895rzGr5H0FdXIiVWx5rt1X2v_o8c';
+
 const { createClient } = supabase;
-const supabaseClient = createClient(CONFIG.SUPABASE_URL, CONFIG.SUPABASE_ANON_KEY);
+const supabaseClient = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 document.addEventListener('DOMContentLoaded', async () => {
     const listingsContainer = document.getElementById('listings-container');

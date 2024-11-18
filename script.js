@@ -1,3 +1,4 @@
+
 // Hardcoded Supabase Configuration
 const SUPABASE_URL = 'https://wxujjqdcbpxrbkgigkxf.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind4dWpqcWRjYnB4cmJrZ2lna3hmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzA5NTgyMzQsImV4cCI6MjA0NjUzNDIzNH0.ikrFupGy3rWzJt895rzGr5H0FdXIiVWx5rt1X2v_o8c';
@@ -6,6 +7,17 @@ const { createClient } = supabase;
 const supabaseClient = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 document.addEventListener('DOMContentLoaded', async () => {
+
+function closePopup() {
+    document.getElementById('updatePopup').style.display = 'none';
+}
+
+window.onload = function() {
+    document.getElementById('updatePopup').style.display = 'flex';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+
     const listingsContainer = document.getElementById('listings-container');
     const searchInput = document.getElementById('search');
     const filterSelect = document.getElementById('filter');
